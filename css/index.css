@@ -1,0 +1,38 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  width: 99%;
+  height: 75px;
+  padding-left: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  border: 2px solid green;
+}
+
+#logo{
+  height: 65px;
+  width: 65px;
+}
+
+.manager{
+  background-image:url("../images/AB.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin: 5%;
+  height: 150px;
+  width: 200px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.starters{
+  display: flex;
+  
+}

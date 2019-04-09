@@ -1,0 +1,19 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.navbar{
+  width: 75%;
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  border: 2px solid green;
+}
+
+#logo{
+  height: 65px;
+  width: 65px;
+}
