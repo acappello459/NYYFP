@@ -4,13 +4,13 @@
 }
 
 .navbar{
-  width: 75%;
+  width: 99%;
   height: 75px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  border: 2px solid green;
+  border: 3px solid #000066;
 }
 
 #logo{

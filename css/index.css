@@ -3,6 +3,12 @@
   padding: 0;
 }
 
+body{
+  background-image: url("../images/background.jpg");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+}
+
 .navbar{
   width: 99%;
   height: 75px;
@@ -11,7 +17,14 @@
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  border: 2px solid green;
+  border-bottom: 3px solid #000066;
+}
+
+.navbar li a{
+  text-shadow: -1px -1px black,	1px -1px black,	-1px 1px black,	1px 1px black;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
 }
 
 #logo{
@@ -20,19 +33,110 @@
 }
 
 .manager{
-  background-image:url("../images/AB.jpeg");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  margin: 5%;
-  height: 150px;
-  width: 200px;
   color: white;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  border-radius: 15px;
+  text-shadow: -1px -1px black,	1px -1px black,	-1px 1px black,	1px 1px black;
+  margin: 2%;
+  position: relative;
+  font-size: 1.5em;
+}
+
+.text{
+  position: absolute;
+  bottom: 1px;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .starters{
+  height: 75vh;
+  width: 100%;
   display: flex;
-  
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: space-around;
+  flex-direction: column;
+  color: white;
+  text-shadow: -1px -1px black,	1px -1px black,	-1px 1px black,	1px 1px black;
 }
+
+.starters div{
+  height: 30%;
+  width: 10%;
+  display: flex;
+  border-radius: 10px;
+  justify-content: center;
+  font-size: 1.20em;
+}
+
+.FB{
+  background-image: url("../images/1B.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  order:1;
+}
+
+.SB{
+  background-image: url("../images/2B.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  order:4;
+}
+
+.SS{
+  background-image: url("../images/SS.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  order:7;
+}
+
+.TB{
+  background-image: url("../images/3B.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  order:2;
+}
+
+.LF{
+  background-image: url("../images/LF.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  order:5;
+}
+
+.CF{
+  background-image: url("../images/CF.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  order:8;
+}
+
+.RF{
+  background-image: url("../images/RF.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  order:3;
+}
+
+.C{
+  background-image: url("../images/C.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  order:6;
+}
+
+.DH{
+  background-image: url("../images/DH.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  order:9;
+}
+/* .SP{
+  background-image: url("../images/SP.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  order:3;
+} */
