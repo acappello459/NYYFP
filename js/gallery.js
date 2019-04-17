@@ -4,20 +4,52 @@ var body = document.getElementsByTagName('body')[0];
 var Button = document.getElementsByClassName('Button')[0];
 var previousButt = document.getElementById('previousButt');
 var nextButt = document.getElementById('nextButt');
+var picture = 0;
+
+
+window.addEventListener('keyup', keyUp)
+
+function keyUp(e){
+  if(e.code == "ArrowLeft"){
+    previousButton()
+  }else if (e.code == "ArrowRight") {
+    nextButton()
+  }else {
+    return;
+  }
+}
+
+nextButt.addEventListener('click',nextButton)
+
+previousButt.addEventListener('click', previousButton)
 
 fillSlider()
 
 function fillSlider(){
-    slider.style.backgroundImage = "url(" + array[0] + ")"
+    slider.style.backgroundImage = "url(" + array[picture] + ")"
 }
 
 function nextButton(){
-  slider.style.backgroundImage = "url(" + array[0] + ")"
-  console.log('butt')
-
-  for (var i = 0; i < array.length; i++) {
-    slider.style.backgroundImage = "url(" + array[i] + ")"
-  }
+  console.log(picture);
+    if (picture > array.length-2) {
+      picture = 0;
+        slider.style.backgroundImage = "url(" + array[picture] + ")"
+      }else {
+        picture++;
+        slider.style.backgroundImage = "url(" + array[picture] + ")"
 }
 
-nextButt.addEventListener('click', nextButton)
+}
+
+function previousButton(){
+  console.log(picture);
+  if(picture <= 0){
+    picture = array.length - 1;
+    slider.style.backgroundImage = "url(" + array[picture] + ")"
+  }
+    else {
+      picture--
+      slider.style.backgroundImage = "url(" + array[picture] + ")"
+
+    }
+}

@@ -3,17 +3,34 @@
   padding: 0;
 }
 
+body{
+  background-image: url("../images/background.jpg");
+  background-repeat:no-repeat;
+  background-size: 100% 100%;
+}
+
 .navbar{
-  width: 75%;
-  height: 75px;
+  width: 100%;
+  height: 10vh;
+  padding-left: 0px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   list-style: none;
-  border: 2px solid green;
+  border-bottom: 3px solid #000066;
+  background-image: url("../images/pinstripes.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.navbar li a{
+  text-shadow: -1px -1px #0C1F46,	1px -1px #0C1F46,	-1px 1px #0C1F46,	1px 1px #0C1F46;
+  color: #E40027;
+  text-decoration: none;
+  font-size: 2.5em;
 }
 
 #logo{
-  height: 65px;
-  width: 65px;
+  height: 75px;
+  width: 75px;
 }
